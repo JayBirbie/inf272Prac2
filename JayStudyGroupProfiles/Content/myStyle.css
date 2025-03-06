@@ -1,2 +1,14 @@
 ﻿body {
 }
+
+ul.nav {
+    list-style-type: none;
+    overflow: inherit;
+    background-color: darkolivegreen;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
