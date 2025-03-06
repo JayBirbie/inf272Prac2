@@ -26,23 +26,23 @@
         <th></th>
     </tr>
 
-    @foreach (var item in Model) //For each person
+    @foreach (var person in Model) //For each person
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.stuNum)
+                @Html.DisplayFor(modelItem => person.stuNum)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.fName)
+                @Html.DisplayFor(modelItem => person.fName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.lName)
+                @Html.DisplayFor(modelItem => person.lName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.email)
+                @Html.DisplayFor(modelItem => person.email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.myLink)
+                @Html.ActionLink("Details", "Details", "Profile", new { area = "" }, new { @class = "btn btn-primary" })
             </td>
 
         </tr>
