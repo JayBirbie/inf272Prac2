@@ -42,7 +42,7 @@
                 @Html.DisplayFor(modelItem => person.email)
             </td>
             <td>
-                @Html.ActionLink("Details", "Details", "Profile", new { area = "" }, new { @class = "btn btn-primary" })
+                <a href="@person.myLink" class="btn btn-primary">LINK</a>
             </td>
 
         </tr>
