@@ -1,51 +1,51 @@
 ﻿@model IEnumerable<JayStudyGroupProfiles.Models.PersonModel>
 
-@{
-    ViewBag.Title = "List of Members";
-}
-
-<h2>List of People</h2>
-
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.stuNum)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.fName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.lName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.myLink)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var person in Model) //For each person
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => person.stuNum)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => person.fName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => person.lName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => person.email)
-            </td>
-            <td>
-                <a href="@person.myLink" class="btn btn-primary">LINK</a>
-            </td>
-
-        </tr>
+    @{
+        ViewBag.Title = "List of Members";
     }
 
-</table>
+    <h2>List of People</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.stuNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.myLink)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var person in Model) //For each person
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => person.stuNum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => person.fName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => person.lName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => person.email)
+                </td>
+                <td>
+                    <a href="@person.myLink" class="btn btn-primary">LINK</a>
+                </td>
+
+            </tr>
+        }
+
+    </table>
