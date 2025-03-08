@@ -7,6 +7,10 @@ ul.nav {
     background-color: darkolivegreen;
 }
 
+ul.nav > li{
+    display: inline;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;

@@ -26,16 +26,5 @@ namespace JayStudyGroupProfiles.Controllers
 
             return View();
         }
-
-        public ActionResult Static()
-        {
-            //getting prev url from request headers
-            string refererURL = Request.UrlReferrer?.ToString();
-
-            //passing url to view
-            ViewBag.RefererURL = refererURL ?? Url.Action("Index", "Home"); //fallback
-
-            return View();
-        }
     }
 }
