@@ -150,6 +150,21 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="HTML\duckyPage.html" />
+    <Content Include="HTML\images\ducky1.jpg" />
+    <Content Include="HTML\images\ducky2.jpg" />
+    <Content Include="HTML\images\ducky3.jpg" />
+    <Content Include="HTML\images\jay1.gif" />
+    <Content Include="HTML\images\jay2.gif" />
+    <Content Include="HTML\images\jay3.jpg" />
+    <Content Include="HTML\images\jess1.jpg" />
+    <Content Include="HTML\images\jess2jpg.jpg" />
+    <Content Include="HTML\images\jess3.jpg" />
+    <Content Include="HTML\images\rae1.gif" />
+    <Content Include="HTML\images\rae2.jpg" />
+    <Content Include="HTML\images\rae3.jpg" />
+    <Content Include="HTML\images\ryan1.jpg" />
+    <Content Include="HTML\images\ryan2jpg.jpg" />
+    <Content Include="HTML\images\ryan3.jpg" />
     <Content Include="HTML\jayPage.html" />
     <Content Include="HTML\jessPage.html" />
     <Content Include="HTML\ryanPage.html" />
@@ -189,7 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="HTML\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
