@@ -17,7 +17,21 @@
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("List of People", "List", "People", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item dropdown">
+                        <!-- Dropdown Trigger -->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPeople" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            List of People
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownPeople">
+                            <li>@Html.ActionLink("Complete List of People", "List", "People", new { area = "" }, new { @class = "dropdown-item" })</li>
+                            <li><a class="dropdown-item" href="../HTML/raePage.html">Person 1</a></li>
+                            <li><a class="dropdown-item" href="../HTML/duckyPage.html">Person 2</a></li>
+                            <li><a class="dropdown-item" href="../HTML/jessPage.html">Person 3</a></li>
+                            <li><a class="dropdown-item" href="../HTML/jayPage.html">Person 4</a></li>
+                            <li><a class="dropdown-item" href="../HTML/ryanPage.html">Person 5</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
