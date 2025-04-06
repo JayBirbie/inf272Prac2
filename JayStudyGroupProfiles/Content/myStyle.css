@@ -10,6 +10,21 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*html{
+    background-color: #8ebc8e;
+}
+
+body {
+    background-color: #e7ffe7;
+    margin: 20px;
+    padding: 15px 20px 20px 20px;
+    border: 3px solid #228b22;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}*/
+
 /* NAVIGATION */
 .navbar-custom {
     background-color: #333;
@@ -30,82 +45,6 @@ body {
             background-color: #228b22;
             font-weight: bold;
         }
-
-/* CARD CONTENT BLOCKS */
-.container-custom {
-    background-color: #ffffff;
-    border: 3px solid #228b22;
-    padding: 10px;
-    margin: 20px 0;
-}
-
-h1, h2, p, table {
-    padding: 10px;
-    margin: auto;
-}
-
-/* IMAGE & TEXT BOX */
-.box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-    .box img {
-        flex-grow: 0;
-        padding: 10px;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-        .box img:hover {
-            transform: scaleX(-1);
-        }
-
-    .box p {
-        flex: 1;
-        padding: 10px;
-    }
-
-/* TABLE */
-table {
-    width: 100%;
-}
-
-th, td {
-    padding: 6px;
-    text-align: left;
-}
-
-/* RESPONSIVENESS */
-@media screen and (max-width: 700px) {
-    .box {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-        .box img {
-            margin: 0 auto;
-        }
-}
-/*html{
-    background-color: #8ebc8e;
-}
-
-body {
-    background-color: #e7ffe7;
-    margin: 20px;
-    padding: 15px 20px 20px 20px;
-    border: 3px solid #228b22;
-}
-
-* {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}*/
 
 /*NAV BAR*/
 
@@ -139,6 +78,21 @@ body {
               background-color: #228b22;
             }*/
 
+/* CARD CONTENT BLOCKS */
+/*.container-custom {
+    background-color: #ffffff;
+    border: 3px solid #228b22;
+    padding: 10px;
+    margin: 20px 0;
+}
+*/
+
+
+h1, h2, p, table {
+    padding: 10px;
+    margin: auto;
+}
+
 /*CONTENT*/
 
 /*h1, h2, p, table{
@@ -166,17 +120,60 @@ body {
     flex: 3 3 auto;
     align-self: center;    
 }
-.container {
-    background-color: #ffffff;
-    border: 3px solid #228b22;
-    padding: 10px;
-    margin: 20px 0px 20px 0px;
-}
+
 
 .image {
     width: 200px;
     height: 200px;
 }*/
+
+/* IMAGE & TEXT BOX */
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+    .box img {
+        flex-grow: 0;
+        align-self: center;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+        .box img:hover {
+            transform: scaleX(-1);
+        }
+
+    .box p {
+        flex: 1;
+        align-self:center;
+    }
+
+/* TABLE */
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 6px;
+    text-align: left;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 700px) {
+    .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+        .box img {
+            margin: 0 auto;
+        }
+}
 
 /*MEDIA Q*/
 
